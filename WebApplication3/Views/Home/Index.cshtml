@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Выбор курса";
+}
+<article class="d-flex flex-column">
+    <div class="align-self-center shadow-lg mt-3">
+        <a asp-controller="Home" asp-action="LevelSelection" class="a-style-none shadow-hover d-flex flex-row align-items-center p-3 text-dark">
+            <div class="icon-beginning"></div>
+            <p class="m-0 font-weight-bold text-uppercase">Начинающий</p>
+            <div class="icon-unlock"></div>
+        </a>
+        <a class="a-style-none shadow-hover d-flex flex-row align-items-center p-3 text-dark">
+            <div class="icon-middle"></div>
+            <p class="m-0 font-weight-bold text-uppercase">Опытный</p>
+            <div class="icon-lock"></div>
+        </a>
+        <a class="a-style-none shadow-hover d-flex flex-row align-items-center p-3 text-dark">
+            <div class="icon-advanced"></div>
+            <p class="m-0 font-weight-bold text-uppercase">Продвинутый</p>
+            <div class="icon-lock"></div>
+        </a>
+    </div>
+</article>
+<script src="/lib/jquery/dist/jquery-3.5.1.min.js"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/draggabilly/draggabilly.pkgd.min.js"></script>
+<script src="/js/script.js"></script>
+
+

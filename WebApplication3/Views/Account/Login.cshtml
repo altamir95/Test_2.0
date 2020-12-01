@@ -1,0 +1,49 @@
+﻿@model WebApplication3.ViewModels.LoginViewModel
+@{
+    Layout = "_LayoutStartPage";
+}
+
+<div class="text-white d-flex flex-row align-items-center justify-content-center">
+    <p class="display-4 justify-content-start" style="font-weight: 500">DARS.RU</p>
+    <p class="">знания<br />для всех</p>
+</div>
+<form class="rounded p-5 text-white d-flex flex-column" style="background-color: rgba(0, 0, 0, 0.801)" method="post" asp-controller="Account" asp-action="Login"
+      asp-route-returnUrl="@Model.ReturnUrl">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div class="form-group m-0">
+        <label asp-for="Email"></label><br />
+        <input class="form-control" style="border-radius: 3px 3px 0 0" id="exampleInputEmail1" placeholder="Почта" aria-describedby="emailHelp" asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div class="form-group m-0">
+        <label asp-for="Password"></label><br />
+        <input class="form-control mb-3" style="border-radius: 0 0 3px 3px" placeholder="Пароль" asp-for="Password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <label asp-for="RememberMe"></label><br />
+        <input asp-for="RememberMe" />
+    </div>
+    <div>
+        <input type="submit" class="btn btn-primary" value="Войти" />
+        <hr />
+        <a asp-controller="Account" asp-action="Register">Зарегистрироваться</a><br />
+        <a asp-controller="Account" asp-action="ForgotPassword"><small>Забыл пароль</small></a>
+    </div>
+</form>
+
+
+
+@*<form >
+        <div >
+            <input type="email" class="form-control" style="border-radius: 3px 3px 0 0" id="exampleInputEmail1" placeholder="Почта" aria-describedby="emailHelp" />
+        </div>
+        <div class="form-group m-0">
+            <input type="password" class="form-control mb-3" style="border-radius: 0 0 3px 3px" placeholder="Пароль" id="exampleInputPassword1" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Войти</button>
+        <hr />
+        <a href="#">Зарегистрироваться</a>
+        <a href="#"><small>Забыл пароль</small></a>
+    </form>*@

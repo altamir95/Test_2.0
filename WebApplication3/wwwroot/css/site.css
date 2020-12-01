@@ -1,0 +1,453 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap");
+/* font-family: 'Xanh Mono', monospace; */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+/* font-family: 'Noto Sans JP', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* font-family: 'Cormorant', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: 'Raleway', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* font-family: 'IBM Plex Serif', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: 'Raleway', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+/* font-family: 'Tajawal', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: 'Rubik', sans-serif; */
+/* █████████████████████████████████████████ ОТМЕНА СТАНДАРТОНОГО СТИЛЯ ████████████████████████████████ */
+.a-style-none {
+    outline: none;
+    text-decoration: none;
+}
+
+    .a-style-none:hover {
+        outline: none;
+        text-decoration: none;
+    }
+
+.button-style-none {
+    border: none;
+    outline: none;
+}
+/* █████████████████████████████████████████ ЗАДНИЙ ФОН █████████████████████████████████████████████████ */
+.bg-students {
+    background: linear-gradient(rgba(88, 88, 88, 0.8), rgba(0, 0, 0, 0.5)), url("/img/students.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-alpha-composit-800 {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bg-light {
+    background-color: #e2e2e2 !important;
+}
+
+.bg-danger-important {
+    background-color: red !important;
+}
+/* █████████████████████████████████████████ РАЗМРЫ ███████████████████████████████████████████████████████ */
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.w-px-150 {
+    width: 150px;
+}
+
+.img-width-100percent {
+    max-width: 100%;
+}
+
+.h-2em {
+    height: 2em;
+}
+
+.w-initial {
+    width: initial;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.max-w-800px {
+    max-width: 800px;
+}
+/* █████████████████████████████████████████ ИКОНКИ ███████████████████████████████████████████████████████ */
+.icon-beginning {
+    background: url(/img/beginning.png) 0 0 round;
+    width: 100px;
+    height: 100px;
+}
+
+.icon-middle {
+    background: url(/img/middle.png) 0 0 round;
+    width: 100px;
+    height: 100px;
+}
+
+.icon-advanced {
+    background: url(/img/advanced.png) 0 0 round;
+    width: 100px;
+    height: 100px;
+}
+
+.icon-lock {
+    background-image: url(/img/lock.png);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.icon-unlock {
+    background-image: url(/img/unlock.png);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.icon-prev {
+    background-image: url(/img/prev.png);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.icon-next {
+    background-image: url(/img/next.png);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    justify-self: center;
+}
+
+.icon-check {
+    background-image: url(/img/check.png);
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+    .icon-check:hover {
+        filter: brightness(110%);
+    }
+
+.icon-upfinger {
+    background-image: url(/img/upfinger.png);
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.icon-downfinger {
+    background-image: url(/img/downfinger.png);
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.ul-jurisprudence:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    margin-right: 10px;
+    height: 25px;
+    background: url(/img/icon_jurisprudence.png) 0 0 round;
+    transition: 0.3s;
+}
+
+.ul-gammer:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    margin-right: 10px;
+    height: 25px;
+    background: url(/img/icon_grammer.png) 0 0 round;
+    transition: 0.3s;
+}
+
+.ul-history:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    margin-right: 10px;
+    height: 25px;
+    background: url(/img/icon_history.png) 0 0 round;
+    transition: 0.3s;
+}
+
+.btn-add-icon {
+    transition: 0.3s;
+    border: none !important;
+    outline: none !important;
+    width: 0px;
+    height: 0px;
+    margin-right: 13px;
+}
+
+    .btn-add-icon:before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(/img/add.png) 0 0 round;
+    }
+
+    .btn-add-icon:hover {
+        filter: brightness(110%);
+    }
+
+    .btn-add-icon:active {
+        filter: brightness(120%);
+    }
+
+.btn-volume-icon {
+    transition: 0.3s;
+    border: none !important;
+    outline: none !important;
+    width: 0px;
+    height: 0px;
+    margin-right: 13px;
+}
+
+    .btn-volume-icon:before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(/img/volume.png) 0 0 round;
+    }
+
+    .btn-volume-icon:hover {
+        filter: brightness(110%);
+    }
+
+    .btn-volume-icon:active {
+        filter: brightness(120%);
+    }
+
+.btn-delete-icon {
+    transition: 0.3s;
+    border: none !important;
+    outline: none !important;
+    width: 0px;
+    height: 0px;
+    margin-right: 13px;
+}
+
+    .btn-delete-icon:before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(/img/delete.png) 0 0 round;
+    }
+
+    .btn-delete-icon:hover {
+        filter: brightness(110%);
+    }
+
+    .btn-delete-icon:active {
+        filter: brightness(120%);
+    }
+
+.btn-ok-icon {
+    transition: 0.3s;
+    border: none !important;
+    outline: none !important;
+    width: 0px;
+    height: 0px;
+    margin-right: 13px;
+}
+
+    .btn-ok-icon:before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(/img/ok.png) 0 0 round;
+    }
+
+    .btn-ok-icon:hover {
+        filter: brightness(110%);
+    }
+
+    .btn-ok-icon:active {
+        filter: brightness(120%);
+    }
+/* █████████████████████████████████████████ ТЕНЬ █████████████████████████████████████████ */
+.shadow-hover:hover {
+    box-shadow: 0 0 10px;
+    transition: 0.3s;
+}
+
+.shadow-xl {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25) !important;
+    transition: 0.3s;
+}
+
+    .shadow-xl:hover {
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.363) !important;
+    }
+/* █████████████████████████████████████████ ГРАНИЦЫ ██████████████████████████████████████ */
+.border-w-3 {
+    border-width: 3px !important;
+}
+
+.bordr-dashed {
+    border-style: dashed !important;
+}
+
+.bordr-dotted {
+    border-style: dotted !important;
+}
+/* █████████████████████████████████████████ ЗОНА СТАТЬИ ██████████████████████████████████ */
+@media (min-width: 576px) {
+    .article-zone {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .article-zone {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .article-zone {
+        width: 750px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .article-zone {
+        width: 750px;
+    }
+}
+
+article > h1 {
+    font-family: "Raleway", sans-serif !important;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+article > p {
+    font-family: "IBM Plex Serif", serif !important;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: normal;
+    text-indent: 20px;
+}
+
+article > img {
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    article > h1 {
+        font-size: 33px;
+    }
+
+    article > p {
+        font-size: 14px;
+    }
+}
+
+article > table {
+    font-size: 14px;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+    width: min-content;
+}
+
+    article > table th {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+    }
+
+    article > table th,
+    article > table td {
+        border-style: solid;
+        border-width: 0 1px 1px 0;
+        border-color: white;
+    }
+
+    article > table td {
+        padding: 10px 20px;
+        background-color: silver;
+    }
+/* █████████████████████████████████████████ ШРИФТЫ █████████████████████████████████████████ */
+.arab {
+    font-family: "Tajawal", sans-serif;
+    font-size: 29px;
+    font-weight: 500 !important;
+    line-height: 0px !important;
+}
+
+.rus {
+    font-family: "Rubik", sans-serif;
+    font-size: 29px;
+    font-weight: 400 !important;
+    line-height: 44px !important;
+}
+/* ███████████████████████████ УДАЛЕНИЕ ПЕРВОЙ КНОПКИ НАЗАД И ПОЛСЕДНЕЙ ДАЛЕЕ ███████████████ */
+
+main div div div:first-child div .prev {
+    visibility: hidden;
+}
+
+main div div div:last-child div .next {
+    visibility: hidden;
+}
+/* █████████████████████████████████████████████ КНОПКА ПЕРЕКЛЮЧАТЕЛЬ ███████████████████████ */
+.radio-style input[type="radio"] {
+    display: none;
+}
+
+.radio-style label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 18px;
+    user-select: none;
+    transition: 0.3s;
+}
+
+    .radio-style label:before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        padding-left: 2.5em;
+        background: url(/img/radio-2.png) 0 0 no-repeat;
+        transition: 0.3s;
+    }
+
+.radio-style input[type="radio"]:checked + label:before {
+    background: url(/img/radio-1.png) 0 0 no-repeat;
+}
+
+.radio-style input[type="radio"]:disabled + label:before {
+    filter: grayscale(100%);
+}
+
+.radio-style input[type="radio"]:checked + label {
+    box-shadow: 0 0 15px 0.5px;
+}

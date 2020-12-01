@@ -1,0 +1,16 @@
+﻿@model int
+
+    <article class="flex-grow-1 d-flex flex-column article-zone mt-4 mb-4 p-3 border-right border-left"></article>
+<script src="/lib/jquery/dist/jquery-3.5.1.min.js"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/draggabilly/draggabilly.pkgd.min.js"></script>
+<script src="/js/script.js"></script>
+
+<script>
+    $.getJSON("/json/articles.json", function (data) {
+        $.each(data[0].article[@Model].text, function (index, value) {
+            $("<" + value.tagName + ' src="' + value.src + '">' + value.text + "</" + value.tagName + ">").appendTo("article");
+            console.log($("<" + value.tagName + ' src="' + value.src + '">' + value.text + "</" + value.tagName + ">"));
+        });
+    });
+</script>

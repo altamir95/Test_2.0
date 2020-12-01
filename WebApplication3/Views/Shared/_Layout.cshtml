@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+
+    <title>@ViewData["Title"] - WebApplication3</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="border-bottom d-flex flex-row navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand d-flex flex-row m-0" asp-controller="Home" asp-action="Index">
+            <h2 class="align-self-center m-0 font-weight-light">ДАРС.РУ</h2>
+            <p style="font-size: 0.5em" class="font-weight-bold align-self-center m-0 ml-1">Знания<br />для всех</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link border-right " href="/html/myWords.html">Личный словарь<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Инструция</a>
+                </li>
+                <li class="nav-item ">
+                    <button type="button" class="btn btn-outline-warning">@User.Identity.Name</button>
+                    @*<button type="button" class="btn btn-primary ">Вход</button>*@
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="flex-grow-1 d-flex flex-column align-items-center">
+        @RenderBody()
+    </main>
+    <footer class="border-top">
+        <p class="text-center">
+            <small><span class="font-weight-bold">© dars.com</span>, 2012-2020. Все права защищены.</small>
+        </p>
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
