@@ -6125,25 +6125,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\altam\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Администратор\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\altam\\source\\repos\\WebApplication3\\WebApplication3\\WebApplication3.csproj",
+      "projectUniqueName": "C:\\Users\\Администратор\\Documents\\GitHub\\Test_2.0\\WebApplication3\\WebApplication3.csproj",
       "projectName": "WebApplication3",
-      "projectPath": "C:\\Users\\altam\\source\\repos\\WebApplication3\\WebApplication3\\WebApplication3.csproj",
-      "packagesPath": "C:\\Users\\altam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\altam\\source\\repos\\WebApplication3\\WebApplication3\\obj\\",
+      "projectPath": "C:\\Users\\Администратор\\Documents\\GitHub\\Test_2.0\\WebApplication3\\WebApplication3.csproj",
+      "packagesPath": "C:\\Users\\Администратор\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Администратор\\Documents\\GitHub\\Test_2.0\\WebApplication3\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\altam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Администратор\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -6154,6 +6149,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -6165,6 +6161,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "MailKit": {
             "target": "Package",
@@ -6197,7 +6194,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
